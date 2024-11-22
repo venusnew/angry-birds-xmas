@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angry Birds Xmas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Birds Xmas Online</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
   <style>
     body {
       margin: 0;
@@ -24,7 +26,8 @@
   </style>
 </head>
 <body>
-  <!-- Inserta el enlace al juego aquí -->
-  <iframe src="angry-birds-xmas.swf" allowfullscreen></iframe>
+     <!-- Juego incrustado -->
+    <div class="game-container" id="gameContainer">
+        <embed src="angry-birds-xmas.swf" id="gameEmbed" width="100%" height="100%">
 </body>
 </html>
